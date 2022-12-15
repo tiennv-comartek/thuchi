@@ -1,0 +1,19 @@
+.masterlayout {
+  height: 100%;
+}
+.wraper_img {
+  padding-bottom: 100vh;
+  position: relative;
+  .img_login {
+    position: absolute;
+    height: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+}
+.waper_login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
