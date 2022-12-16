@@ -1,0 +1,19 @@
+.form_item {
+  width: 100%;
+  .item {
+    width: 100%;
+    margin-bottom: 10px;
+
+    .btn_modal {
+      width: 100%;
+    }
+  }
+}
+.amount {
+  .ant-input-number {
+    width: 100%;
+  }
+}
+.ant-space {
+  align-items: unset;
+}
