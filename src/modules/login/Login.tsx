@@ -1,9 +1,13 @@
 import { Button, Form, Input } from "antd";
+import { useEffect } from "react";
 import useLogin from "./hooks/useLogin";
 import "./style.scss";
 
 const Login = () => {
   const { checkData } = useLogin();
+  useEffect(() => {
+    document.title = "Đăng nhập";
+  }, []);
   const onFinish = (data: any) => {
     checkData(data);
   };

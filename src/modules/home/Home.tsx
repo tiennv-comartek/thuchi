@@ -1,4 +1,5 @@
 import { Button, Card } from "antd";
+import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { key_login } from "../../constant/constant";
 import { systemRouter } from "../../routes";
@@ -35,6 +36,10 @@ function Home() {
     localStorage.removeItem(key_login);
     navigate(systemRouter.LOGIN);
   };
+
+  useEffect(() => {
+    document.title = "Home";
+  }, []);
 
   return (
     <div className="form_home">

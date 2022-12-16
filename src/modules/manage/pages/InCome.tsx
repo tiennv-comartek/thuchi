@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useInComeStore } from "../../store/useInCome";
 import ManageForm from "../components/ManageForm";
 
@@ -11,6 +11,10 @@ function InCome(props) {
       removeData: state.removeData,
     })
   );
+
+  useEffect(() => {
+    document.title = "Thu nhập";
+  }, []);
 
   return (
     <div className="form_item">
