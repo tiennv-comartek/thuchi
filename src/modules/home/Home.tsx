@@ -3,8 +3,8 @@ import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { key_login } from "../../constant/constant";
 import { systemRouter } from "../../routes";
-import { useExpenseStore } from "../store/useExpense";
-import { useInComeStore } from "../store/useInCome";
+import { useExpenseStore } from "../../store/useExpense";
+import { useInComeStore } from "../../store/useInCome";
 import "./style.scss";
 
 function Home() {

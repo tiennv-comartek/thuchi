@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useInComeStore } from "../../store/useInCome";
+import { useInComeStore } from "../../../store/useInCome";
 import ManageForm from "../components/ManageForm";
 
 function InCome(props) {
