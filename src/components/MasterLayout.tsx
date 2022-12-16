@@ -9,7 +9,7 @@ function MasterLayout() {
   return (
     <div className="masterlayout">
       <Row>
-        <Col span={8}>
+        <Col xl={8} md={12} span={0}>
           <div className="wraper_img">
             <div
               className="img_login"
@@ -22,10 +22,10 @@ function MasterLayout() {
           </div>
         </Col>
 
-        <Col className="waper_login" span={8}>
+        <Col className="waper_login" xl={8} md={12} span={24}>
           <Outlet />
         </Col>
-        <Col className="wraper_img" span={8}>
+        <Col className="wraper_img" xl={8} span={0}>
           <div
             className="img_login"
             style={{

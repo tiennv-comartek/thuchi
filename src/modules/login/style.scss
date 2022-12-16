@@ -1,6 +1,5 @@
 .form_login {
   width: 100%;
-  padding-right: 40px;
   .ant-form-item-label {
     label {
       font-size: 18px;
@@ -8,6 +7,7 @@
     }
   }
   .title {
+    padding-bottom: 25px;
     font-size: 25px;
     font-weight: 600;
     text-align: center;

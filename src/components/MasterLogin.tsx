@@ -10,8 +10,8 @@ import "./style.scss";
 function MasterLogin(props) {
   return (
     <div className="masterlayout">
-      <Row gutter={40}>
-        <Col span={16}>
+      <Row  justify="center" >
+        <Col lg={16} md={10} span={0}>
           <div className="wraper_img">
             <div
               className="img_login"
@@ -24,7 +24,7 @@ function MasterLogin(props) {
           </div>
         </Col>
 
-        <Col span={8} className="waper_login">
+        <Col lg={8} md={10} span={14} className="waper_login">
           <Outlet />
         </Col>
       </Row>
