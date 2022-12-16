@@ -8,9 +8,25 @@
     background: linear-gradient(to right, blue 0%, pink 100%);
     background-clip: text;
     color: transparent;
-    margin-bottom: 50px;
-  }
-  .out {
     margin-bottom: 30px;
+  }
+  .out,
+  .in {
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .total {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    .ant-card-head-title {
+      color: red;
+      font-size: 25px;
+      font-weight: 600;
+    }
+    .ant-card-body {
+      color: blue;
+      font-size: 23px;
+    }
   }
 }

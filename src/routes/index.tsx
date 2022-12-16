@@ -3,7 +3,7 @@ import MasterLayout from "../components/MasterLayout";
 import MasterLogin from "../components/MasterLogin";
 import { RouterHome, routerHome } from "../modules/home/route";
 import { routeLogin, RouterLogin } from "../modules/login/route";
-
+import { RouterManager, routerManager } from "../modules/manage/route";
 
 const routes: RouteObject[] = [
   {
@@ -12,11 +12,12 @@ const routes: RouteObject[] = [
   },
   {
     element: <MasterLayout />,
-    children: [...routerHome],
+    children: [...routerHome, ...routerManager],
   },
 ];
 export const systemRouter = {
   ...RouterHome,
   ...RouterLogin,
+  ...RouterManager,
 };
 export const browserRouter = createBrowserRouter(routes);
