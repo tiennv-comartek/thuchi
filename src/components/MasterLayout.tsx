@@ -8,8 +8,8 @@ import { Outlet } from "react-router";
 function MasterLayout() {
   return (
     <div className="masterlayout">
-      <Row gutter={40}>
-        <Col span={9}>
+      <Row>
+        <Col span={8}>
           <div className="wraper_img">
             <div
               className="img_login"
@@ -22,10 +22,10 @@ function MasterLayout() {
           </div>
         </Col>
 
-        <Col span={6} className="waper_login">
+        <Col className="waper_login" span={8}>
           <Outlet />
         </Col>
-        <Col span={9} className="wraper_img">
+        <Col className="wraper_img" span={8}>
           <div
             className="img_login"
             style={{

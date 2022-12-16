@@ -24,12 +24,12 @@ interface ActionI {
   removeData: (dataExpenseId: number) => void;
 }
 
-export const useInComeStore = create<DataArrI & ActionI>((set) => ({
+export const useInComeStore = create<DataArrI & ActionI>()((set) => ({
   dataInComes: [
     {
       id: Math.ceil(Math.random() * 1000),
       data: {
-        title: "Lương",
+        title: "Bán bò",
         amount: 3000000,
       },
     },

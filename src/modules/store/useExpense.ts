@@ -24,7 +24,7 @@ interface ActionI {
   removeData: (dataExpenseId: number) => void;
 }
 
-export const useExpenseStore = create<DataArrI & ActionI>((set) => ({
+export const useExpenseStore = create<DataArrI & ActionI>()((set) => ({
   dataExpenses: [
     {
       id: Math.ceil(Math.random() * 1000),
@@ -43,7 +43,7 @@ export const useExpenseStore = create<DataArrI & ActionI>((set) => ({
   ],
   addData: (dataExpense) => {
     set((state) => ({
-      dataExpenses: [...state.dataExpenses, dataExpense],
+      dataExpenses: [dataExpense, ...state.dataExpenses],
     }));
   },
   updateData: (dataExpenseve) => {
